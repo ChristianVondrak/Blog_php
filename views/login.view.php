@@ -6,10 +6,11 @@ require 'header.php';
     <div class="post">
         <article>
             <h2 class="titulo">Inciar Sesion</h2>
-            <form class="formulario" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"></form>
+            <form class="formulario" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                 <input type="text" name="usuario" placeholder="Usuario">
                 <input type="password" name="password" placeholder="Password">
                 <input type="submit" value="Iniciar sesion">
+                </form>
         </article>
     </div>
 

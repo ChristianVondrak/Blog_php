@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD']=='GET' && !empty($_GET['busqueda'])) {
     if (empty($resultados)) {
         $titulo = 'No se encontraron articulos con el resultado '. $busqueda;
     }else{
-        $titulo = 'Resultados de la busqueda '. $busqueda;
+        $titulo = 'Resultados de la busqueda: '. $busqueda;
     }
 
 } else{

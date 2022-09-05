@@ -3,6 +3,8 @@ require 'header.php';
 ?>
 
 <div class="contenedor">
+
+    <h2><?php echo $titulo; ?></h2>
     
     <?php foreach($resultados as $p): ?>
     <div class="post">
