@@ -1,0 +1,20 @@
+<?php require 'header.php' ?>
+<div class="contenedor">
+    <div class="post">
+        <article>
+            <h2 class="titulo">Editar articulo</h2>
+            <form method="POST" class="formulario" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+                <input type="hidden" value="<?php echo $post['ID']; ?>" name="id">
+                <input type="text" name="titulo" value="<?php echo $post['titulo']; ?>" />
+                <input type="text" name="extracto" value="<?php echo $post['extracto']; ?>">
+                <textarea name="texto"><?php echo $post['texto']; ?></textarea>
+                <input type="file" name="thumb">
+                <input type="hidden" name="thumb-guardada" value="<?php echo $post['thumb']; ?>">
+
+                <input type="submit" value="Modificar aticulo">
+            </form>
+        </article>
+    </div>
+</div>
+
+<?php require 'footer.php' ?>
